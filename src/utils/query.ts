@@ -1,1 +1,4 @@
-export const getQuery = () => new URLSearchParams(window.location.search);
+export const getQuery = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  return Object.fromEntries(urlParams);
+};
