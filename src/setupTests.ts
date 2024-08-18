@@ -4,3 +4,5 @@ Object.assign(global, {
   TextEncoder,
   TextDecoder,
 });
+import "@testing-library/jest-dom";
+console.log("setupTests.ts ==>");
